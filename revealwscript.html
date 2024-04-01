@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Console Script Executor</title>
+</head>
+<body>
+    <h1>Reveal your Mantis from the shadows</h1>
+    <p>Follow these steps:</p>
+    <ol>
+ <li>log into your nns, at nns.ic0.app</li>
+        <li>Right-click on the page and select "Inspect" or "Inspect Element".</li>
+        <li>Go to the "Console" tab in the developer tools.</li>
+        <li>Copy the JavaScript code below and paste it into the console.</li>
+        <li>Press Enter to execute the script.</li>
+    </ol>
+    <textarea id="js-code" rows="10" cols="50" readonly>
+function executeScript() {
+    const ledgerCanisterId = 'wkmqa-rqaaa-aaaar-qacxa-cai'; 
+    __experimentalAddIcrc1Token(ledgerCanisterId);
+    console.log('Script executed with ledgerCanisterId:', ledgerCanisterId, 'and indexCanisterId:', indexCanisterId);
+}	
+
+// Copy and paste the below line into the console
+// executeScript();
+    </textarea>
+    <p>Copy and paste the script inside the textarea above into the console.</p>
+</body>
+</html>
